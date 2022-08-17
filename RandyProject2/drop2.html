@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+
+
+    #fix{
+        width: 190px; height: 46px;
+    position: absolute; bottom: 30px; right: 130px;
+    border-radius: 7px;
+    border: red;
+    background: rgb(251,38,58);
+background: -moz-linear-gradient(156deg, rgba(251,38,58,1) 0%, rgba(254,74,106,1) 23%, rgba(244,101,96,1) 59%, rgba(255,99,84,1) 80%, rgba(233,73,18,1) 96%);
+background: -webkit-linear-gradient(156deg, rgba(251,38,58,1) 0%, rgba(254,74,106,1) 23%, rgba(244,101,96,1) 59%, rgba(255,99,84,1) 80%, rgba(233,73,18,1) 96%);
+background: linear-gradient(156deg, rgba(251,38,58,1) 0%, rgba(254,74,106,1) 23%, rgba(244,101,96,1) 59%, rgba(255,99,84,1) 80%, rgba(233,73,18,1) 96%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb263a",endColorstr="#e94912",GradientType=1);  box-shadow: 4px 6px rgb(31, 31, 31);
+font-family: 'Cantora One', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    color:antiquewhite;
+    text-shadow: 2px 3px black;
+    }
+
+#select1{
+    color: whitesmoke;
+    width: 150px;
+    height: 40px;
+    background: rgb(8,0,2);
+    border: none;
+    border-radius: 5PX;background: rgb(52,52,52);
+background: -moz-linear-gradient(156deg, rgba(52,52,52,1) 26%, rgba(36,36,36,1) 95%, rgba(38,38,38,1) 98%);
+background: -webkit-linear-gradient(156deg, rgba(52,52,52,1) 26%, rgba(36,36,36,1) 95%, rgba(38,38,38,1) 98%);
+background: linear-gradient(156deg, rgba(52,52,52,1) 26%, rgba(36,36,36,1) 95%, rgba(38,38,38,1) 98%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#343434",endColorstr="#262626",GradientType=1);
+}    
+
+
+
+#result{
+    color: whitesmoke;
+font-size: 40px;
+
+}
+
+</style>
+
+<body>
+
+
+    
+    
+    <body>
+        
+        <select id="select1">
+                <option class="result" value="Take $5 off any Pizza orders">New York</option>
+                <option value="Enjoy 20% off any orders including Tacos">California</option>
+                <option value="Warm Up to 15% off Coffee orders">Texas</option>
+                <option value="Take a Cool 25% off Ice Cream orders">Chicago</option>
+            </select>
+    
+    
+        <button id="fix" onclick="getOption()"> Checkout The Deals </button>
+        <p></p><span class="output"></span>
+        <script type="text/javascript">
+        function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value
+            document.querySelector('.output').textContent = output;
+        }
+
+        </script>
+    </body>
+    
+    </html>
+    
+
+    
+</body>
+</html>
