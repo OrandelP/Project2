@@ -1,367 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up and Get Grubbin'!</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../Fontawesome/css/all.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Fontawesome/css/all.css">
 </head>
-<link rel="icon" type="image/x-icon" href="Grublogo3.png">
+<link rel="icon" type="image/x-icon" href="Grublogo3.png"> 
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap');
 
 
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
+*{
+ margin: 0;
+ padding: 0;
+}
+.gh, .back{
+    display: inline;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 30px; color: aliceblue;
+    position: absolute; right: 450px; top: 13px;    
+}
 
-    .gh,
-    .back {
-        display: inline;
-        font-family: 'Barlow Semi Condensed', sans-serif;
-        font-size: 30px;
-        color: aliceblue;
-        position: absolute;
-        right: 450px;
-        top: 13px;
-    }
+#r{
+    display: inline;
+    font-size: 10px;
+    position: absolute; top: 5px;
+}
 
-    #r {
-        display: inline;
-        font-size: 10px;
-        position: absolute;
-        top: 5px;
-    }
+.gh:hover{
+    cursor: pointer;
+    background-image: url('https://www.grubhub.com/lets-eat'); 
+    opacity: 91%;
+}
 
-    .gh:hover {
-        cursor: pointer;
-        background-image: url('https://www.grubhub.com/lets-eat');
-        opacity: 91%;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-        background-image: url('Ramen8xx.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        /*   background: rgb(255,255,255);
+body{
+    margin:0;
+    padding:0;
+    background-image: url('Ramen8xx.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+ /*   background: rgb(255,255,255);
 background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 35%, rgba(254,208,63,1) 35%, rgba(254,180,46,1) 93%);
 background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 35%, rgba(254,208,63,1) 35%, rgba(254,180,46,1) 93%);
 background: linear-gradient(270deg, rgba(255,255,255,1) 35%, rgba(254,208,63,1) 35%, rgba(254,180,46,1) 93%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#feb42e",GradientType=1);
 */
-    }
+}
+    
+div.main{
+    width: 400px;
+    margin: 10px 0 0 1050px;
+}
+    
+div.register{
+width: 100%;
+font-size: 15px;
+border: 1px solid transparent;
 
-    div.main {
-        width: 400px;
-        margin: 10px 0 0 1050px;
-    }
+}
 
-    div.register {
-        width: 100%;
-        font-size: 15px;
-        border: 1px solid transparent;
+.ttle{
+    color: rgb(4, 4, 4);
+    font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 800;
 
-    }
+}
 
-    .ttle {
-        color: rgb(4, 4, 4);
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-weight: 800;
+form#register{
+margin: 40px;
+}
 
-    }
+h2{
+    text-align: center;
+    padding: 8px 0 0 0;
+    margin: 0;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
 
-    form#register {
-        margin: 40px;
-    }
-
-    h2 {
-        text-align: center;
-        padding: 8px 0 0 0;
-        margin: 0;
-        font-family: 'Oleo Script Swash Caps', cursive;
-    }
-
-    label {
-        text-align: left;
-        color: rgb(9, 9, 8);
-        font-family: 'Lexend Deca', sans-serif;
+label{
+    text-align: left;
+    color:rgb(9, 9, 8);
+    font-family: 'Lexend Deca', sans-serif;
 
 
-    }
+}
 
-    input#name {
-        width: 300px;
-        border: 1px solid;
-        border-radius: 3px;
-        outline: 0;
-        padding: 7px;
-        background-color: #fff;
-    }
+input#name{
+    width: 300px;
+    border: 1px solid;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+}
 
-    .get {
-        display: inline;
-    }
+.get{
+    display: inline;
+}
 
-    .press {
-        width: 160px;
-        height: 36px;
-        position: absolute;
-        bottom: 30px;
-        right: 130px;
-        border-radius: 7px;
-        border-color: antiquewhite;
-        background: rgb(255, 203, 108);
-        background: -moz-linear-gradient(58deg, rgb(253, 193, 80) 10%, rgb(250, 208, 41) 63%, rgb(250, 183, 58) 97%);
-        background: -webkit-linear-gradient(58deg, rgba(255, 203, 108, 1) 10%, rgba(228, 189, 37, 1) 63%, rgba(255, 193, 81, 1) 97%);
-        background: linear-gradient(58deg, rgba(255, 203, 108, 1) 10%, rgba(228, 189, 37, 1) 63%, rgba(255, 193, 81, 1) 97%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c", endColorstr="#ffc151", GradientType=1);
-        border: 2px solid rgb(245, 141, 22);
-        box-shadow: 5px 8px rgb(31, 31, 31);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: bolder;
-        cursor: pointer;
+.press{
+    width: 160px; height: 36px;
+    position: absolute; bottom: 30px; right: 130px;
+    border-radius: 7px;
+    border-color: antiquewhite;
+    background: rgb(255,203,108);
+background: -moz-linear-gradient(58deg, rgb(253, 193, 80) 10%, rgb(250, 208, 41) 63%, rgb(250, 183, 58) 97%);
+background: -webkit-linear-gradient(58deg, rgba(255,203,108,1) 10%, rgba(228,189,37,1) 63%, rgba(255,193,81,1) 97%);
+background: linear-gradient(58deg, rgba(255,203,108,1) 10%, rgba(228,189,37,1) 63%, rgba(255,193,81,1) 97%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c",endColorstr="#ffc151",GradientType=1);
+    border: 2px solid rgb(245, 141, 22);
+    box-shadow: 5px 8px rgb(31, 31, 31);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: bolder;
+    cursor: pointer;
 
-    }
+}
+.press:hover{
+    width: 160px; height: 36px;
+    position: absolute; bottom: 30px; right: 130px;
+    border-radius: 7px;
+    border-color: antiquewhite;
+    background: #f8c057;
+background: -moz-linear-gradient(58deg, rgb(242, 176, 53) 10%, rgb(215, 175, 15) 63%, rgb(239, 167, 32) 97%);
+background: -webkit-linear-gradient(58deg, rgb(238, 174, 54) 10%, rgb(217, 176, 13) 63%, rgb(247, 181, 57) 97%);
+background: linear-gradient(58deg, rgb(243, 176, 52) 10%, rgb(235, 192, 19) 63%, rgb(244, 169, 31) 97%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c",endColorstr="#ffc151",GradientType=1);
+    border: 2px solid rgb(245, 141, 22);
+    box-shadow: 3px 6px rgb(31, 31, 31);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: bolder;
+    cursor: pointer;
+}
 
-    .press:hover {
-        width: 160px;
-        height: 36px;
-        position: absolute;
-        bottom: 30px;
-        right: 130px;
-        border-radius: 7px;
-        border-color: antiquewhite;
-        background: #f8c057;
-        background: -moz-linear-gradient(58deg, rgb(242, 176, 53) 10%, rgb(215, 175, 15) 63%, rgb(239, 167, 32) 97%);
-        background: -webkit-linear-gradient(58deg, rgb(238, 174, 54) 10%, rgb(217, 176, 13) 63%, rgb(247, 181, 57) 97%);
-        background: linear-gradient(58deg, rgb(243, 176, 52) 10%, rgb(235, 192, 19) 63%, rgb(244, 169, 31) 97%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c", endColorstr="#ffc151", GradientType=1);
-        border: 2px solid rgb(245, 141, 22);
-        box-shadow: 3px 6px rgb(31, 31, 31);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: bolder;
-        cursor: pointer;
-    }
 </style>
 
 
 <div class="onmobile">
 
-    <body>
-        <section class="grubhub">
-            <div class="Mega">
-                <a href="https://www.grubhub.com/lets-eat">
-    </body>
-    <div class="put">
-        <div class="gh">
-            GRUBHUB <i class="fa-regular fa-registered" id="r"></i>
-        </div>
+<body>
+    <section class="grubhub">
+        <div class="Mega">
+        <a href="https://www.grubhub.com/lets-eat">
+        </body>
+        <div class="put">
+    <div class="gh">
+        GRUBHUB <i class="fa-regular fa-registered" id="r"></i>
+    </div>
     </div>
     </a>
 
 
 
-    <div class="main">
-        <div class="register">
-            <h2 class="ttle">Your Next Favorite Meal Awaits</h2>
-            <form id="register" method="post">
-                <label>First Name:</label>
-                <br>
-                <input type="text" name="fname" id="name" placeholder="ex: John">
-                <br><br>
-                <label>Last Name:</label>
-                <br>
-                <input type="text" name="lname" id="name" placeholder="ex: Doe">
-                <br><br>
-                <label>Address:</label>
-                <br>
-                <input type="text" name="add" id="name" placeholder="ex: 123 sesame street">
-                <br><br>
-                <label>Phone Number:</label>
-                <br>
-                <input type="text" name="phone" id="name" placeholder="ex:555-****">
-                <br><br>
-                <label>Username:</label>
-                <br>
-                <input type="text" name="user" id="name" placeholder="Create a Username">
-                <br><br>
-                <label>Password:</label>
-                <br>
-                <input type="password" name="pass" id="name" placeholder="Create a Password">
-            </form>
-            <div class="get">
-                <a href="phone.html"><input id="press" type="submit" class="press" value="Let's Get Grubbin'"></a>
-            </div>
-            <!-- form -->
-        </div><!-- register-->
-    </div> <!-- Main -->
-    </section>
-    </body>
+<div class="main">
+<div class="register">
+<h2 class="ttle">Your Next Favorite Meal Awaits</h2>
+<form id="register" method="post">
+<label>First Name:</label>
+<br>
+<input type="text" name="fname" id="name" placeholder="ex: John">
+<br><br>
+<label>Last Name:</label>
+<br>
+<input type="text" name="lname" id="name" placeholder="ex: Doe">
+<br><br>
+<label>Address:</label>
+<br>
+<input type="text" name="add" id="name" placeholder="ex: 123 sesame street">
+<br><br>
+<label>Phone Number:</label>
+<br>
+<input type="text" name="phone" id="name" placeholder="ex:555-****">
+<br><br>
+<label>Username:</label>
+<br>
+<input type="text" name="user" id="name" placeholder="Create a Username">
+<br><br>
+<label>Password:</label>
+<br>
+<input type="text" name="pass" id="name" placeholder="Create a Password">
+</form>
+<div class="get">
+    <a href="phone.html"><input id ="press" type="submit" class="press" value="Let's Get Grubbin'"></a>
+</div>
+<!-- form -->
+</div><!-- register-->
+</div> <!-- Main -->
+</section>
+</body> 
 </div>
 
 
 <style>
+
     @media screen and (max-width: 500px) {
         .onmobile {
             display: none;
         }
 
-        .body {
-            display: none;
-        }
+    .body{
+        display: none;
+    }
+    
+
+
+    .doc{
+margin:0px;
+padding: 0px;
+position: absolute; top:35px; left:1px;
+width: 300px;
+height: 600px;
+background-color: rgb(13, 13, 12, 0.03);
+overflow: hidden;
+border-radius: 3px;
+}
+
+
+div.main{
+    margin:0px;
+padding: 0px;
+}
+    
+div.register{
+    margin:0px;
+padding: 0px;
+width: 100%;
+font-size: 15px;
+border: 1px solid transparent;
+
+}
+
+.ttle{
+    margin:0px;
+padding: 0px;
+    color: rgb(4, 4, 4);
+    font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 800;
+
+}
+
+form#register{
+}
+
+label{
+    color: whitesmoke;
+    background-color: rgb(1, 1, 1, 0.75);
+    
+}
 
 
 
-        .doc {
-            margin: 0px;
-            padding: 0px;
-            position: absolute;
-            top: 35px;
-            left: 1px;
-            width: 300px;
-            height: 600px;
-            background-color: rgb(13, 13, 12, 0.03);
-            overflow: hidden;
-            border-radius: 3px;
-        }
+.press{
+    width: 150px; height: 36px;
+    
+    position:fixed; bottom: 30px; left: 100px;
+    border-radius: 7px;
+    border-color: antiquewhite;
+    background: rgb(255,203,108);
+background: -moz-linear-gradient(58deg, rgba(255,203,108,1) 10%, rgba(228,189,37,1) 63%, rgba(255,193,81,1) 97%);
+background: -webkit-linear-gradient(58deg, rgba(255,203,108,1) 10%, rgba(228,189,37,1) 63%, rgba(255,193,81,1) 97%);
+background: linear-gradient(58deg, rgba(255,203,108,1) 10%, rgba(228,189,37,1) 63%, rgba(255,193,81,1) 97%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c",endColorstr="#ffc151",GradientType=1);
+    border: 2px solid rgb(245, 141, 22);
+    box-shadow: 5px 8px rgb(54, 53, 53);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: bolder;
+    cursor: pointer;
+
+}
+
+.press:hover{
+    width: 150px; height: 36px;
+    position:absolute; bottom: 30px; left: 100px;
+    border-radius: 7px;
+    border-color: antiquewhite;
+    background: #f8c057;
+background: -moz-linear-gradient(58deg, rgb(242, 176, 53) 10%, rgb(215, 175, 15) 63%, rgb(239, 167, 32) 97%);
+background: -webkit-linear-gradient(58deg, rgb(238, 174, 54) 10%, rgb(217, 176, 13) 63%, rgb(247, 181, 57) 97%);
+background: linear-gradient(58deg, rgb(243, 176, 52) 10%, rgb(235, 192, 19) 63%, rgb(244, 169, 31) 97%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c",endColorstr="#ffc151",GradientType=1);
+    border: 2px solid rgb(245, 141, 22);
+    box-shadow: 3px 6px rgb(54, 53, 53);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: bolder;
+    cursor: pointer;
+
+}
 
 
-        div.main {
-            margin: 0px;
-            padding: 0px;
-        }
+    .head{
+margin: 0;
+padding: 0;
+position: absolute; top: 0px; left: 0px;
+width: 375px;
+height: 60px;
+background-color: rgb(6, 6, 6, 0.8);
+overflow: scroll;
+border-radius: 3px;
+border: 1px solid black;
+    }
 
-        div.register {
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-            font-size: 15px;
-            border: 1px solid transparent;
-
-        }
-
-        .ttle {
-            margin: 0px;
-            padding: 0px;
-            color: rgb(4, 4, 4);
-            font-family: 'Montserrat Alternates', sans-serif;
-            font-weight: 800;
-
-        }
-
-        form#register {}
-
-        label {
-            color: whitesmoke;
-            background-color: rgb(1, 1, 1, 0.75);
-
-        }
+.gh, .back{
+    display: inline;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 30px; color: white;
+    position: absolute; left: 40px; top: 10px;    
+}
 
 
+#r{
+    display: inline;
+    font-size: 10px;
+    position: absolute; top: 5px; right: -122px;
 
-        .press {
-            width: 150px;
-            height: 36px;
-
-            position: fixed;
-            bottom: 30px;
-            left: 100px;
-            border-radius: 7px;
-            border-color: antiquewhite;
-            background: rgb(255, 203, 108);
-            background: -moz-linear-gradient(58deg, rgba(255, 203, 108, 1) 10%, rgba(228, 189, 37, 1) 63%, rgba(255, 193, 81, 1) 97%);
-            background: -webkit-linear-gradient(58deg, rgba(255, 203, 108, 1) 10%, rgba(228, 189, 37, 1) 63%, rgba(255, 193, 81, 1) 97%);
-            background: linear-gradient(58deg, rgba(255, 203, 108, 1) 10%, rgba(228, 189, 37, 1) 63%, rgba(255, 193, 81, 1) 97%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c", endColorstr="#ffc151", GradientType=1);
-            border: 2px solid rgb(245, 141, 22);
-            box-shadow: 5px 8px rgb(54, 53, 53);
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: bolder;
-            cursor: pointer;
-
-        }
-
-        .press:hover {
-            width: 150px;
-            height: 36px;
-            position: absolute;
-            bottom: 30px;
-            left: 100px;
-            border-radius: 7px;
-            border-color: antiquewhite;
-            background: #f8c057;
-            background: -moz-linear-gradient(58deg, rgb(242, 176, 53) 10%, rgb(215, 175, 15) 63%, rgb(239, 167, 32) 97%);
-            background: -webkit-linear-gradient(58deg, rgb(238, 174, 54) 10%, rgb(217, 176, 13) 63%, rgb(247, 181, 57) 97%);
-            background: linear-gradient(58deg, rgb(243, 176, 52) 10%, rgb(235, 192, 19) 63%, rgb(244, 169, 31) 97%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c", endColorstr="#ffc151", GradientType=1);
-            border: 2px solid rgb(245, 141, 22);
-            box-shadow: 3px 6px rgb(54, 53, 53);
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: bolder;
-            cursor: pointer;
-
-        }
-
-
-        .head {
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 375px;
-            height: 60px;
-            background-color: rgb(6, 6, 6, 0.8);
-            overflow: scroll;
-            border-radius: 3px;
-            border: 1px solid black;
-        }
-
-        .gh,
-        .back {
-            display: inline;
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 30px;
-            color: white;
-            position: absolute;
-            left: 40px;
-            top: 10px;
-        }
-
-
-        #r {
-            display: inline;
-            font-size: 10px;
-            position: absolute;
-            top: 5px;
-            right: -122px;
-
-        }
+}
 
 
     }
-</style>
-
+    
+    </style>
+    
 <div class="ondesktop">
 
     <div class="head">
@@ -369,59 +340,59 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 
     <div class="Mega">
         <a href="index.html">
-            </body>
-            <div class="put">
-                <div class="gh">
-                    GRUBHUB <i class="fa-regular fa-registered" id="r"></i>
-                </div>
-            </div>
-        </a>
-
-        <img src="Ramen90.jpeg">
-
-        <div class="doc">
-            <form id="register" method="post">
-                <label>First Name</label>
-                <br>
-                <input type="text" name="fname" id="name" placeholder="ex: John">
-                <br><br>
-                <label>Last Name</label>
-                <br>
-                <input type="text" name="lname" id="name" placeholder="ex: Doe">
-                <br><br>
-                <label>Address</label>
-                <br>
-                <input type="text" name="add" id="name" placeholder="ex: 123 sesame street">
-                <br><br>
-                <label>Phone Number</label>
-                <br>
-                <input type="text" name="phone" id="name" placeholder="ex:555-****">
-                <br><br>
-                <label>Username</label>
-                <br>
-                <input type="text" name="user" id="name" placeholder="Create a Username">
-                <br><br>
-                <label>Password</label>
-                <br>
-                <input type="text" name="pass" id="name" placeholder="Create a Password">
-                <br><br>
-            </form>
-        </div>
-
-        <div class="get">
-            <a href="phone.html"><input id="press" type="submit" class="press" value="Let's Get Grubbin'"></a>
-        </div>
-
-
+        </body>
+        <div class="put">
+    <div class="gh">
+        GRUBHUB <i class="fa-regular fa-registered" id="r"></i>
     </div>
+    </div>
+    </a>
+
+<img src="Ramen90.jpeg">
+
+<div class="doc">
+    <form id="register" method="post">
+        <label>First Name</label>
+        <br>
+        <input type="text" name="fname" id="name" placeholder="ex: John">
+        <br><br>
+        <label>Last Name</label>
+        <br>
+        <input type="text" name="lname" id="name" placeholder="ex: Doe">
+        <br><br>
+        <label>Address</label>
+        <br>
+        <input type="text" name="add" id="name" placeholder="ex: 123 sesame street">
+        <br><br>
+        <label>Phone Number</label>
+        <br>
+        <input type="text" name="phone" id="name" placeholder="ex:555-****">
+        <br><br>
+        <label>Username</label>
+        <br>
+        <input type="text" name="user" id="name" placeholder="Create a Username">
+        <br><br>
+        <label>Password</label>
+        <br>
+        <input type="text" name="pass" id="name" placeholder="Create a Password">
+        <br><br>
+        </form>
+</div>
+
+<div class="get">
+    <a href="phone.html"><input id ="press" type="submit" class="press" value="Let's Get Grubbin'"></a>
+</div>
+
+
+</div>
 
 </div>
 <style>
     @media screen and (min-width: 800px) {
-        .ondesktop {
-            display: none;
-        }
+    .ondesktop {
+        display: none;
     }
+}
 </style>
 
 
