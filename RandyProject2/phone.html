@@ -1,253 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome!</title>
-    <link rel="icon" type="image/x-icon" href="Grublogo3.png"> 
+    <link rel="icon" type="image/x-icon" href="Grublogo3.png">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../Fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Fontawesome/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 80vh;
+            box-sizing: border-box;
+            background: rgb(255, 207, 78);
+            background: -moz-linear-gradient(270deg, rgba(255, 207, 78, 1) 7%, rgba(247, 206, 8, 1) 37%, rgba(250, 187, 71, 1) 58%, rgba(245, 177, 45, 1) 97%);
+            background: -webkit-linear-gradient(270deg, rgba(255, 207, 78, 1) 7%, rgba(247, 206, 8, 1) 37%, rgba(250, 187, 71, 1) 58%, rgba(245, 177, 45, 1) 97%);
+            background: linear-gradient(270deg, rgba(255, 207, 78, 1) 7%, rgba(247, 206, 8, 1) 37%, rgba(250, 187, 71, 1) 58%, rgba(245, 177, 45, 1) 97%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcf4e", endColorstr="#f5b12d", GradientType=1);
+        }
+
+        .gh,
+        .back {
+            display: inline;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 30px;
+            color: aliceblue;
+            position: absolute;
+            left: 50px;
+            top: 30px;
+        }
+
+        .member2 {
+
+            color: black;
+        }
+
+        #r {
+            display: inline;
+            font-size: 10px;
+            position: absolute;
+            top: 5px;
+        }
+
+        .gh:hover {
+            cursor: pointer;
+            background-image: url('https://www.grubhub.com/lets-eat');
+            opacity: 91%;
+        }
+
+
+        .press {
+            width: 160px;
+            height: 36px;
+            position: absolute;
+            bottom: 30px;
+            right: 130px;
+            border-radius: 7px;
+            border-color: antiquewhite;
+            background: rgb(255, 203, 108);
+            background: -moz-linear-gradient(58deg, rgb(253, 193, 80) 10%, rgb(250, 208, 41) 63%, rgb(250, 183, 58) 97%);
+            background: -webkit-linear-gradient(58deg, rgba(255, 203, 108, 1) 10%, rgba(228, 189, 37, 1) 63%, rgba(255, 193, 81, 1) 97%);
+            background: linear-gradient(58deg, rgba(255, 203, 108, 1) 10%, rgba(228, 189, 37, 1) 63%, rgba(255, 193, 81, 1) 97%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c", endColorstr="#ffc151", GradientType=1);
+            border: 2px solid rgb(245, 141, 22);
+            box-shadow: 5px 8px rgb(31, 31, 31);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: bolder;
+            cursor: pointer;
+
+        }
+
+        .press:hover {
+            width: 160px;
+            height: 36px;
+            position: absolute;
+            bottom: 30px;
+            right: 130px;
+            border-radius: 7px;
+            border-color: antiquewhite;
+            background: #f8c057;
+            background: -moz-linear-gradient(58deg, rgb(242, 176, 53) 10%, rgb(215, 175, 15) 63%, rgb(239, 167, 32) 97%);
+            background: -webkit-linear-gradient(58deg, rgb(238, 174, 54) 10%, rgb(217, 176, 13) 63%, rgb(247, 181, 57) 97%);
+            background: linear-gradient(58deg, rgb(243, 176, 52) 10%, rgb(235, 192, 19) 63%, rgb(244, 169, 31) 97%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c", endColorstr="#ffc151", GradientType=1);
+            border: 2px solid rgb(245, 141, 22);
+            box-shadow: 3px 6px rgb(31, 31, 31);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: bolder;
+            cursor: pointer;
+        }
+
+        .main {
+            font-family: 'El Messiri', sans-serif;
+            color: white;
+            font-size: 70px;
+            text-shadow: 2px 3px rgb(23, 25, 25), 4px 5px rgb(151, 150, 150);
+            display: inline;
+            position: absolute;
+            right: 70px;
+            bottom: 470px;
+        }
+
+        #verify {
+            font-size: 40px;
+            font-family: 'Pacifico', cursive;
+            color: black;
+            display: inline;
+            text-shadow: 1px 1px white;
+            position: absolute;
+            right: 260px;
+            top: 220px;
+
+        }
+
+        #list {
+            width: 150px;
+            height: 30px;
+        }
+
+        .container {
+
+            position: absolute;
+            right: 85px;
+            top: 320px;
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+
+
+        #fix {
+            width: 190px;
+            height: 46px;
+            position: absolute;
+            bottom: 30px;
+            right: 130px;
+            border-radius: 7px;
+            border: red;
+            background: rgb(251, 38, 58);
+            background: -moz-linear-gradient(156deg, rgba(251, 38, 58, 1) 0%, rgba(254, 74, 106, 1) 23%, rgba(244, 101, 96, 1) 59%, rgba(255, 99, 84, 1) 80%, rgba(233, 73, 18, 1) 96%);
+            background: -webkit-linear-gradient(156deg, rgba(251, 38, 58, 1) 0%, rgba(254, 74, 106, 1) 23%, rgba(244, 101, 96, 1) 59%, rgba(255, 99, 84, 1) 80%, rgba(233, 73, 18, 1) 96%);
+            background: linear-gradient(156deg, rgba(251, 38, 58, 1) 0%, rgba(254, 74, 106, 1) 23%, rgba(244, 101, 96, 1) 59%, rgba(255, 99, 84, 1) 80%, rgba(233, 73, 18, 1) 96%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb263a", endColorstr="#e94912", GradientType=1);
+            box-shadow: 4px 6px rgb(31, 31, 31);
+            font-family: 'Cantora One', sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+            color: white;
+            text-shadow: 1px 2px rgb(8, 8, 8);
+
+            position: absolute;
+            right: 360px;
+            bottom: 300px;
+        }
+
+
+
+        #fix:hover {
+            width: 190px;
+            height: 46px;
+            position: absolute;
+            bottom: 30px;
+            right: 130px;
+            border-radius: 7px;
+            border: red;
+            background: rgb(210, 33, 51);
+            background: -moz-linear-gradient(156deg, rgb(206, 31, 48) 0%, rgb(190, 52, 77) 23%, rgb(195, 79, 75) 59%, rgb(187, 71, 60) 80%, rgb(188, 57, 13) 96%);
+            background: -webkit-linear-gradient(156deg, rgb(191, 26, 42) 0%, rgb(164, 45, 67) 23%, rgb(150, 62, 59) 59%, rgb(176, 67, 57) 80%, rgb(187, 57, 14) 96%);
+            background: linear-gradient(156deg, rgb(158, 20, 34) 0%, rgb(175, 48, 71) 23%, rgb(183, 73, 70) 59%, rgb(191, 71, 60) 80%, rgb(175, 52, 12) 96%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb263a", endColorstr="#e94912", GradientType=1);
+            box-shadow: 2px 3px rgb(31, 31, 31);
+            font-family: 'Cantora One', sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+            color: antiquewhite;
+            text-shadow: 1px 2px rgb(8, 8, 8);
+
+            position: absolute;
+            right: 360px;
+            bottom: 300px;
+        }
+
+
+        #select1 {
+            color: whitesmoke;
+            width: 150px;
+            height: 40px;
+            background: rgb(8, 0, 2);
+            border: none;
+            border-radius: 5PX;
+            background: rgb(52, 52, 52);
+            background: -moz-linear-gradient(156deg, rgba(52, 52, 52, 1) 26%, rgba(36, 36, 36, 1) 95%, rgba(38, 38, 38, 1) 98%);
+            background: -webkit-linear-gradient(156deg, rgba(52, 52, 52, 1) 26%, rgba(36, 36, 36, 1) 95%, rgba(38, 38, 38, 1) 98%);
+            background: linear-gradient(156deg, rgba(52, 52, 52, 1) 26%, rgba(36, 36, 36, 1) 95%, rgba(38, 38, 38, 1) 98%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#343434", endColorstr="#262626", GradientType=1);
+
+            position: absolute;
+            right: 580px;
+            bottom: 300px;
+        }
+
+        option,
+        #result {
+
+            position: absolute;
+            right: 580px;
+            bottom: 300px;
+        }
+
+        #result {
+            color: whitesmoke;
+            font-size: 40px;
+
+        }
+
+        .output {
+            font-family: 'Lobster', cursive;
+            color: rgb(244, 241, 240);
+            font-size: 50px;
+            text-shadow: 2px 3px rgb(155, 17, 1), 4px 5px rgb(188, 2, 160), 6px 7px rgb(30, 73, 3), 8px 9px rgb(39, 30, 1), 11px 12px rgb(43, 42, 42);
+            display: inline;
+            position: absolute;
+            left: 700px;
+            bottom: 205px;
+        }
+    </style>
 </head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-</script>
 
+<!-------------------------------This begins the body of the page---------------------------------->
 
-
-
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
-
-
-
-*{
- margin: 0;
- padding: 0;
-}
-
-body{
-    height: 80vh;
-    box-sizing: border-box;
-    background: rgb(255,207,78);
-background: -moz-linear-gradient(270deg, rgba(255,207,78,1) 7%, rgba(247,206,8,1) 37%, rgba(250,187,71,1) 58%, rgba(245,177,45,1) 97%);
-background: -webkit-linear-gradient(270deg, rgba(255,207,78,1) 7%, rgba(247,206,8,1) 37%, rgba(250,187,71,1) 58%, rgba(245,177,45,1) 97%);
-background: linear-gradient(270deg, rgba(255,207,78,1) 7%, rgba(247,206,8,1) 37%, rgba(250,187,71,1) 58%, rgba(245,177,45,1) 97%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcf4e",endColorstr="#f5b12d",GradientType=1);
-}
-.gh, .back{
-    display: inline;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 30px; color: aliceblue;
-    position: absolute; left: 50px; top: 30px;    
-}
-
-.member2{
-    
-    color: black;
-}
-
-#r{
-    display: inline;
-    font-size: 10px;
-    position: absolute; top: 5px;
-}
-
-.gh:hover{
-    cursor: pointer;
-    background-image: url('https://www.grubhub.com/lets-eat'); 
-    opacity: 91%;
-}
-
-
-.press{
-    width: 160px; height: 36px;
-    position: absolute; bottom: 30px; right: 130px;
-    border-radius: 7px;
-    border-color: antiquewhite;
-    background: rgb(255,203,108);
-background: -moz-linear-gradient(58deg, rgb(253, 193, 80) 10%, rgb(250, 208, 41) 63%, rgb(250, 183, 58) 97%);
-background: -webkit-linear-gradient(58deg, rgba(255,203,108,1) 10%, rgba(228,189,37,1) 63%, rgba(255,193,81,1) 97%);
-background: linear-gradient(58deg, rgba(255,203,108,1) 10%, rgba(228,189,37,1) 63%, rgba(255,193,81,1) 97%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c",endColorstr="#ffc151",GradientType=1);
-    border: 2px solid rgb(245, 141, 22);
-    box-shadow: 5px 8px rgb(31, 31, 31);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: bolder;
-    cursor: pointer;
-
-}
-.press:hover{
-    width: 160px; height: 36px;
-    position: absolute; bottom: 30px; right: 130px;
-    border-radius: 7px;
-    border-color: antiquewhite;
-    background: #f8c057;
-background: -moz-linear-gradient(58deg, rgb(242, 176, 53) 10%, rgb(215, 175, 15) 63%, rgb(239, 167, 32) 97%);
-background: -webkit-linear-gradient(58deg, rgb(238, 174, 54) 10%, rgb(217, 176, 13) 63%, rgb(247, 181, 57) 97%);
-background: linear-gradient(58deg, rgb(243, 176, 52) 10%, rgb(235, 192, 19) 63%, rgb(244, 169, 31) 97%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb6c",endColorstr="#ffc151",GradientType=1);
-    border: 2px solid rgb(245, 141, 22);
-    box-shadow: 3px 6px rgb(31, 31, 31);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: bolder;
-    cursor: pointer;
-}
-
-.main {
-    font-family: 'El Messiri', sans-serif;
-    color: white;
-font-size: 70px;
-text-shadow: 2px 3px rgb(23, 25, 25), 4px 5px rgb(151, 150, 150) ;
-display: inline;
-position: absolute; right: 70px; bottom: 470px;
-}
-
-#verify{
-    font-size: 40px;
-    font-family: 'Pacifico', cursive;
-    color: black;
-    display: inline;
-    text-shadow: 1px 1px white;
-position: absolute; right: 260px; top: 220px;
-
-}
-
-#list{
-width: 150px;
-height: 30px;
-}
-.container{
-    
-position: absolute; right: 85px; top: 320px;
-
-}
-@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
-
-
-    #fix{
-        width: 190px; height: 46px;
-    position: absolute; bottom: 30px; right: 130px;
-    border-radius: 7px;
-    border: red;
-    background: rgb(251,38,58);
-background: -moz-linear-gradient(156deg, rgba(251,38,58,1) 0%, rgba(254,74,106,1) 23%, rgba(244,101,96,1) 59%, rgba(255,99,84,1) 80%, rgba(233,73,18,1) 96%);
-background: -webkit-linear-gradient(156deg, rgba(251,38,58,1) 0%, rgba(254,74,106,1) 23%, rgba(244,101,96,1) 59%, rgba(255,99,84,1) 80%, rgba(233,73,18,1) 96%);
-background: linear-gradient(156deg, rgba(251,38,58,1) 0%, rgba(254,74,106,1) 23%, rgba(244,101,96,1) 59%, rgba(255,99,84,1) 80%, rgba(233,73,18,1) 96%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb263a",endColorstr="#e94912",GradientType=1);  box-shadow: 4px 6px rgb(31, 31, 31);
-font-family: 'Cantora One', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    color: white;
-    text-shadow: 1px 2px rgb(8, 8, 8);
-
-position: absolute; right: 360px; bottom: 300px;
-    }
-
-
-    
-    #fix:hover {
-        width: 190px; height: 46px;
-    position: absolute; bottom: 30px; right: 130px;
-    border-radius: 7px;
-    border: red;
-    background: rgb(210, 33, 51);
-background: -moz-linear-gradient(156deg, rgb(206, 31, 48) 0%, rgb(190, 52, 77) 23%, rgb(195, 79, 75) 59%, rgb(187, 71, 60) 80%, rgb(188, 57, 13) 96%);
-background: -webkit-linear-gradient(156deg, rgb(191, 26, 42) 0%, rgb(164, 45, 67) 23%, rgb(150, 62, 59) 59%, rgb(176, 67, 57) 80%, rgb(187, 57, 14) 96%);
-background: linear-gradient(156deg, rgb(158, 20, 34) 0%, rgb(175, 48, 71) 23%, rgb(183, 73, 70) 59%, rgb(191, 71, 60) 80%, rgb(175, 52, 12) 96%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb263a",endColorstr="#e94912",GradientType=1);  box-shadow: 2px 3px rgb(31, 31, 31);
-font-family: 'Cantora One', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    color:antiquewhite;
-    text-shadow: 1px 2px rgb(8, 8, 8);
-
-position: absolute; right: 360px; bottom: 300px;
-    }
-
-
-#select1{
-    color: whitesmoke;
-    width: 150px;
-    height: 40px;
-    background: rgb(8,0,2);
-    border: none;
-    border-radius: 5PX;background: rgb(52,52,52);
-background: -moz-linear-gradient(156deg, rgba(52,52,52,1) 26%, rgba(36,36,36,1) 95%, rgba(38,38,38,1) 98%);
-background: -webkit-linear-gradient(156deg, rgba(52,52,52,1) 26%, rgba(36,36,36,1) 95%, rgba(38,38,38,1) 98%);
-background: linear-gradient(156deg, rgba(52,52,52,1) 26%, rgba(36,36,36,1) 95%, rgba(38,38,38,1) 98%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#343434",endColorstr="#262626",GradientType=1);
-
-position: absolute; right: 580px; bottom: 300px;
-}    
-
-option, #result{
-
-position: absolute; right: 580px; bottom: 300px;
-}
-
-#result{
-    color: whitesmoke;
-font-size: 40px;
-
-}
-
-.output{
-    font-family: 'Lobster', cursive;
-    color: rgb(244, 241, 240);
-font-size: 50px;
-text-shadow: 2px 3px rgb(155, 17, 1), 4px 5px rgb(188, 2, 160), 6px 7px rgb(30, 73, 3), 8px 9px rgb(39, 30, 1), 11px 12px rgb(43, 42, 42) ;
-display: inline;
-position: absolute; left: 700px; bottom: 205px;
-}
-
-</style>
-
-
-      <!-------------------------------This begins the body of the page---------------------------------->
-      
 <div class="nomobile">
+
     <body>
         <section>
-    <div class="Mega">
-        <a href="index.html">
-        <div class="put">
-    <div class="gh">
-        GRUBHUB <i class="fa-regular fa-registered" id="r"></i>
-    </div>
-    </div>
-    </a>
-<img src="handphonea.png" width="610px">
-<div class="main2"> 
-    <div class="main">Check Your Notifications<br></div>
-    <span id="verify">Verify your account & <a href="https://www.grubhub.com/get-started" class="member2">Sign In</a> <br> Try some of these special offers:</span></div>
+            <div class="Mega">
+                <a href="index.html">
+                    <div class="put">
+                        <div class="gh">
+                            GRUBHUB <i class="fa-regular fa-registered" id="r"></i>
+                        </div>
+                    </div>
+                </a>
+                <img src="handphonea.png" width="610px">
+                <div class="main2">
+                    <div class="main">Check Your Notifications<br></div>
+                    <span id="verify">Verify your account & <a href="https://www.grubhub.com/get-started"
+                            class="member2">Sign In</a> <br> Try some of these special offers:</span>
+                </div>
 
 
-    <select id="select1">
-        <option disabled hidden selected>Choose Your City</option>
-        <option id="result" value="Take $5 off any Pizza orders">New York</option>
-        <option value="Enjoy 20% off any Taco orders">California</option>
-        <option value="Warm Up to 15% off Coffee orders">Texas</option>
-        <option value="Take a Cool 25% off Ice Cream orders">Chicago</option>
-    </select>
+                <select id="select1">
+                    <option disabled hidden selected>Choose Your City</option>
+                    <option id="result" value="Take $5 off any Pizza orders">New York</option>
+                    <option value="Enjoy 20% off any Taco orders">California</option>
+                    <option value="Warm Up to 15% off Coffee orders">Texas</option>
+                    <option value="Take a Cool 25% off Ice Cream orders">Chicago</option>
+                </select>
 
 
-<button id="fix" onclick="state()">Checkout The Deals </button>
-<p></p><span class="output"></span>
+                <button id="fix" onclick="state()">Checkout The Deals </button>
+                <p></p><span class="output"></span>
 
-<!---------------------------------------Javascript--------------------------------------->
-<script type="text/javascript">
-function state() {
-    selectElement = document.querySelector('#select1');
-    answer = selectElement.value;
-    document.querySelector('.output').textContent = answer;
-}
+                <!---------------------------------------Javascript--------------------------------------->
+                <script type="text/javascript">
+                    function state() {
+                        selectElement = document.querySelector('#select1');
+                        answer = selectElement.value;
+                        document.querySelector('.output').textContent = answer;
+                    }
 
-</script>
-</section>
+                </script>
+        </section>
 
 
 
@@ -258,182 +300,209 @@ function state() {
 
 
 <style>
-
-@media screen and (max-width: 500px) {
+    @media screen and (max-width: 500px) {
         .nomobile {
             display: none;
         }
 
-        .imag{
+        .imag {
 
-position: absolute; left: 54px; top: 104px;
-}
+            position: absolute;
+            left: 54px;
+            top: 104px;
+        }
 
-body{
-    height: 100vh;
-}
-.head{
-margin: 0;
-padding: 0;
-position: absolute; top: 0px; left: 0px;
-width: 375px;
-height: 60px;
-background-color: rgb(6, 6, 6, 0.85);
-overflow: scroll;
-border: 1px solid black;
+        body {
+            height: 100vh;
+        }
+
+        .head {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 375px;
+            height: 60px;
+            background-color: rgb(6, 6, 6, 0.85);
+            overflow: scroll;
+            border: 1px solid black;
+        }
+
+        #r {
+            display: inline;
+            font-size: 10px;
+            position: absolute;
+            top: 5px;
+
+        }
+
+
+        .gh,
+        .back {
+            display: inline;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 30px;
+            color: aliceblue;
+            text-shadow: 1px 2px rgb(1, 20, 4), 2px 3px rgb(67, 65, 65);
+
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+
+        .gh:hover {
+            cursor: pointer;
+            background-image: url('https://www.grubhub.com/lets-eat');
+            opacity: 91%;
+        }
+
+
+
+        .main {
+            font-family: 'El Messiri', sans-serif;
+            color: white;
+            font-size: 27px;
+            text-shadow: 2px 3px rgb(23, 25, 25), 4px 5px rgb(151, 150, 150);
+            display: inline;
+            position: absolute;
+            right: 42px;
+            top: 60px;
+        }
+
+        #fix {
+            width: 120px;
+            height: 46px;
+            border-radius: 7px;
+            border: red;
+            background: rgb(251, 38, 58);
+            background: -moz-linear-gradient(156deg, rgba(251, 38, 58, 1) 0%, rgba(254, 74, 106, 1) 23%, rgba(244, 101, 96, 1) 59%, rgba(255, 99, 84, 1) 80%, rgba(233, 73, 18, 1) 96%);
+            background: -webkit-linear-gradient(156deg, rgba(251, 38, 58, 1) 0%, rgba(254, 74, 106, 1) 23%, rgba(244, 101, 96, 1) 59%, rgba(255, 99, 84, 1) 80%, rgba(233, 73, 18, 1) 96%);
+            background: linear-gradient(156deg, rgba(251, 38, 58, 1) 0%, rgba(254, 74, 106, 1) 23%, rgba(244, 101, 96, 1) 59%, rgba(255, 99, 84, 1) 80%, rgba(233, 73, 18, 1) 96%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb263a", endColorstr="#e94912", GradientType=1);
+            box-shadow: 4px 6px rgb(31, 31, 31);
+            font-family: 'Cantora One', sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+            color: white;
+            text-shadow: 1px 2px rgb(8, 8, 8);
+
+            position: absolute;
+            left: 110px;
+            bottom: 50px;
+        }
+
+        #verify {
+            font-size: 27px;
+            font-family: 'Pacifico', cursive;
+            color: black;
+            display: inline;
+            text-shadow: 1px 1px white;
+            position: absolute;
+            right: 130px;
+            top: 358px;
+
+        }
+
+        #fix:hover {
+
+            width: 120px;
+            height: 46px;
+            position: absolute;
+            bottom: 30px;
+            right: 130px;
+            border-radius: 7px;
+            border: red;
+            background: rgb(210, 33, 51);
+            background: -moz-linear-gradient(156deg, rgb(206, 31, 48) 0%, rgb(190, 52, 77) 23%, rgb(195, 79, 75) 59%, rgb(187, 71, 60) 80%, rgb(188, 57, 13) 96%);
+            background: -webkit-linear-gradient(156deg, rgb(191, 26, 42) 0%, rgb(164, 45, 67) 23%, rgb(150, 62, 59) 59%, rgb(176, 67, 57) 80%, rgb(187, 57, 14) 96%);
+            background: linear-gradient(156deg, rgb(158, 20, 34) 0%, rgb(175, 48, 71) 23%, rgb(183, 73, 70) 59%, rgb(191, 71, 60) 80%, rgb(175, 52, 12) 96%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb263a", endColorstr="#e94912", GradientType=1);
+            box-shadow: 2px 3px rgb(31, 31, 31);
+            font-family: 'Cantora One', sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+            color: antiquewhite;
+            text-shadow: 1px 2px rgb(8, 8, 8);
+
+            position: absolute;
+            left: 110px;
+            bottom: 50px;
+        }
+
+
+        #select1 {
+            color: whitesmoke;
+            width: 134px;
+            height: 45px;
+            background: rgb(8, 0, 2);
+            border: none;
+            border-radius: 5PX;
+            background: rgb(52, 52, 52);
+            background: -moz-linear-gradient(156deg, rgba(52, 52, 52, 1) 26%, rgba(36, 36, 36, 1) 95%, rgba(38, 38, 38, 1) 98%);
+            background: -webkit-linear-gradient(156deg, rgba(52, 52, 52, 1) 26%, rgba(36, 36, 36, 1) 95%, rgba(38, 38, 38, 1) 98%);
+            background: linear-gradient(156deg, rgba(52, 52, 52, 1) 26%, rgba(36, 36, 36, 1) 95%, rgba(38, 38, 38, 1) 98%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#343434", endColorstr="#262626", GradientType=1);
+
+            position: absolute;
+            right: 36px;
+            top: 395px;
+
+        }
+
+
+        .imag2 {
+
+            position: absolute;
+            left: -120px;
+            bottom: -333px;
+        }
+
+
     }
-        
-    #r{
-        display: inline;
-        font-size: 10px;
-        position: absolute; top: 5px;
-    
-    }
-    
-
-    .gh, .back{
-        display: inline;
-        font-family: 'Barlow Semi Condensed', sans-serif;
-        font-size: 30px; color: aliceblue;
-        text-shadow: 1px 2px rgb(1, 20, 4), 2px 3px rgb(67, 65, 65) ;
-
-        position: absolute; left: 20px; top: 10px;    
-    }
-    
-    .gh:hover{
-        cursor: pointer;
-        background-image: url('https://www.grubhub.com/lets-eat'); 
-        opacity: 91%;
-    }
-
-
-
-    .main {
-    font-family: 'El Messiri', sans-serif;
-    color: white;
-font-size: 27px;
-text-shadow: 2px 3px rgb(23, 25, 25), 4px 5px rgb(151, 150, 150) ;
-display: inline;
-position: absolute; right: 42px; top: 60px;
-}
-
-#fix{
-        width: 120px; height: 46px;
-    border-radius: 7px;
-    border: red;
-    background: rgb(251,38,58);
-background: -moz-linear-gradient(156deg, rgba(251,38,58,1) 0%, rgba(254,74,106,1) 23%, rgba(244,101,96,1) 59%, rgba(255,99,84,1) 80%, rgba(233,73,18,1) 96%);
-background: -webkit-linear-gradient(156deg, rgba(251,38,58,1) 0%, rgba(254,74,106,1) 23%, rgba(244,101,96,1) 59%, rgba(255,99,84,1) 80%, rgba(233,73,18,1) 96%);
-background: linear-gradient(156deg, rgba(251,38,58,1) 0%, rgba(254,74,106,1) 23%, rgba(244,101,96,1) 59%, rgba(255,99,84,1) 80%, rgba(233,73,18,1) 96%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb263a",endColorstr="#e94912",GradientType=1);  box-shadow: 4px 6px rgb(31, 31, 31);
-font-family: 'Cantora One', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    color: white;
-    text-shadow: 1px 2px rgb(8, 8, 8);
-
-position: absolute; left: 110px; bottom: 50px;
-    }
-
-    #verify{
-    font-size: 27px;
-    font-family: 'Pacifico', cursive;
-    color: black;
-    display: inline;
-    text-shadow: 1px 1px white;
-position: absolute; right: 130px; top: 358px;
-
-}
-    
-    #fix:hover {
-
-        width: 120px; height: 46px;
-    position: absolute; bottom: 30px; right: 130px;
-    border-radius: 7px;
-    border: red;
-    background: rgb(210, 33, 51);
-background: -moz-linear-gradient(156deg, rgb(206, 31, 48) 0%, rgb(190, 52, 77) 23%, rgb(195, 79, 75) 59%, rgb(187, 71, 60) 80%, rgb(188, 57, 13) 96%);
-background: -webkit-linear-gradient(156deg, rgb(191, 26, 42) 0%, rgb(164, 45, 67) 23%, rgb(150, 62, 59) 59%, rgb(176, 67, 57) 80%, rgb(187, 57, 14) 96%);
-background: linear-gradient(156deg, rgb(158, 20, 34) 0%, rgb(175, 48, 71) 23%, rgb(183, 73, 70) 59%, rgb(191, 71, 60) 80%, rgb(175, 52, 12) 96%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb263a",endColorstr="#e94912",GradientType=1);  box-shadow: 2px 3px rgb(31, 31, 31);
-font-family: 'Cantora One', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    color:antiquewhite;
-    text-shadow: 1px 2px rgb(8, 8, 8);
-
-    position: absolute; left: 110px; bottom: 50px;
-    }
-
-
-#select1{
-    color: whitesmoke;
-    width: 134px;
-    height: 45px;
-    background: rgb(8,0,2);
-    border: none;
-    border-radius: 5PX;background: rgb(52,52,52);
-background: -moz-linear-gradient(156deg, rgba(52,52,52,1) 26%, rgba(36,36,36,1) 95%, rgba(38,38,38,1) 98%);
-background: -webkit-linear-gradient(156deg, rgba(52,52,52,1) 26%, rgba(36,36,36,1) 95%, rgba(38,38,38,1) 98%);
-background: linear-gradient(156deg, rgba(52,52,52,1) 26%, rgba(36,36,36,1) 95%, rgba(38,38,38,1) 98%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#343434",endColorstr="#262626",GradientType=1);
-
-position: absolute; right: 36px; top: 395px;
-
-}    
-
-
-.imag2{
-
-position: absolute; left: -120px; bottom: -333px;
-}
-
-
-}
 </style>
 <div class="nodesktop">
     <div class="head">
     </div>
-<div class="Mega">
-    <a href="https://www.grubhub.com/lets-eat">
-    </body>
-    <div class="put">
-<div class="gh">
-    GRUBHUB <i class="fa-regular fa-registered" id="r"></i>
-</div>
-</div>
-</a>
+    <div class="Mega">
+        <a href="https://www.grubhub.com/lets-eat">
+            </body>
+            <div class="put">
+                <div class="gh">
+                    GRUBHUB <i class="fa-regular fa-registered" id="r"></i>
+                </div>
+            </div>
+        </a>
 
-<img src="Gbag.png" width="230px" class="imag">
-
-
-
-    
-<div class="main2"> 
-    <div class="main">Check Your Notifications<br></div>
-    <span id="verify">Verify & <a href="https://www.grubhub.com/get-started" class="member2">Sign In</a> 
-
-
-</body>
-
-<img src="mid8.png" class="imag2" width="500px">
-
-</div>
-</div>
+        <img src="Gbag.png" width="230px" class="imag">
 
 
 
-<style>
-       @media screen and (min-width: 800px) {
-    .nodesktop {
-        display: none;
-    }
-}
-</style>
+
+        <div class="main2">
+            <div class="main">Check Your Notifications<br></div>
+            <span id="verify">Verify & <a href="https://www.grubhub.com/get-started" class="member2">Sign In</a>
+
+
+                </body>
+
+                <img src="mid8.png" class="imag2" width="500px">
+
+        </div>
+    </div>
+
+
+
+    <style>
+        @media screen and (min-width: 800px) {
+            .nodesktop {
+                display: none;
+            }
+        }
+    </style>
 
 
 
 
 
 </html>
-
